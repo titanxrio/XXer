@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ScamGuard User Lookup</title>
+  <title>Privacy Policy - ScamGuard</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:sans-serif;background:#0a0e1a;color:#f5f5f5;min-height:100vh;display:flex;flex-direction:column}
@@ -14,14 +14,12 @@
     nav a{color:#f5f5f5;text-decoration:none;font-weight:500}
     .btn-lookup{padding:.5rem 1rem;background:#00d2ff;border:none;border-radius:999px;color:#0a0e1a;font-weight:bold;cursor:pointer;transition:opacity .2s}
     .btn-lookup:hover{opacity:.8}
-    main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem}
-    h1{font-size:2.5rem;line-height:1.1}
-    .accent{color:#00d2ff}
-    .form{margin-top:2rem;display:flex;gap:1rem}
-    .form input{padding:.75rem 1rem;border:1px solid #00d2ff;border-radius:8px;background:transparent;color:#f5f5f5;font-size:1rem;outline:none}
-    .form input::placeholder{color:#7a7f8b}
-    .form button{padding:.75rem 1.5rem;background:#00d2ff;border:none;border-radius:8px;color:#0a0e1a;font-size:1rem;font-weight:600;cursor:pointer;transition:opacity .2s}
-    .form button:hover{opacity:.8}
+    main{flex:1;padding:2rem 4rem;max-width:800px;margin:0 auto}
+    h1{font-size:2.25rem;margin-bottom:1rem;color:#00d2ff}
+    section{margin-bottom:2rem;line-height:1.6}
+    h2{font-size:1.5rem;margin-bottom:.5rem;color:#f5f5f5}
+    p, ul{margin-bottom:1rem}
+    ul{list-style:disc;margin-left:1.5rem}
     footer{padding:1rem 2rem;text-align:center;background:#05080f;font-size:.9rem}
     footer a{color:#00d2ff;text-decoration:none;margin:0 .5rem}
   </style>
@@ -34,21 +32,68 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#workflow">Workflow</a></li>
-        <li><a href="#stats">Stats</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="privacy.html" class="active">Privacy Policy</a></li>
       </ul>
     </nav>
-    <button class="btn-lookup" onclick="location.href='#lookup'">Lookup User</button>
+    <button class="btn-lookup" onclick="location.href='index.html#lookup'">Lookup User</button>
   </header>
-  <main id="lookup">
-    <h1>User Lookup <span class="accent">ScamGuard</span></h1>
-    <p>Enter a Discord User ID to check for vouches</p>
-    <form class="form" action="/lookup.html" method="get">
-      <input type="text" name="userid" placeholder="User ID" required>
-      <button type="submit">Search</button>
-    </form>
+  <main>
+    <h1>Privacy Policy</h1>
+    <section>
+      <h2>1. Data We Collect</h2>
+      <p>We collect the following data to provide the core functionality of the ScamGuard Vouch Bot:</p>
+      <ul>
+        <li>Discord User IDs</li>
+        <li>Vouch Records (who vouched for whom, timestamp, message)</li>
+        <li>Scammer Reports (ID, reason, timestamp)</li>
+        <li>Guild and Channel IDs for configuration</li>
+      </ul>
+      <p>We DO NOT collect:</p>
+      <ul>
+        <li>IP addresses</li>
+        <li>Emails or passwords</li>
+        <li>Direct messages (DMs)</li>
+        <li>Location data</li>
+      </ul>
+    </section>
+    <section>
+      <h2>2. How We Use Your Data</h2>
+      <p>Your data is used solely to:</p>
+      <ul>
+        <li>Manage the vouch system</li>
+        <li>Track and display scammer reports</li>
+        <li>Generate user lookup profiles</li>
+      </ul>
+    </section>
+    <section>
+      <h2>3. Data Sharing</h2>
+      <p>We do not share personal data with third parties. Only authorized developers have access to the data for maintenance and support purposes.</p>
+    </section>
+    <section>
+      <h2>4. Data Retention</h2>
+      <p>Vouch and report data is stored indefinitely unless removed by the bot owner or by user request.</p>
+    </section>
+    <section>
+      <h2>5. Security Measures</h2>
+      <p>We implement encryption, secure hosting, and access restrictions. However, no system is 100% secure.</p>
+    </section>
+    <section>
+      <h2>6. Your Rights</h2>
+      <p>You may request deletion of your data or report misuse by contacting us on Discord or via email.</p>
+    </section>
+    <section>
+      <h2>7. Minors</h2>
+      <p>This bot is not intended for users under 13. By using the bot, you confirm compliance with Discord’s age requirements.</p>
+    </section>
+    <section>
+      <h2>8. Changes to This Policy</h2>
+      <p>We may update this policy. Changes will be reflected on this page with a new effective date.</p>
+    </section>
   </main>
   <footer>
     Contact: <a href="https://discord.gg/scamguard" target="_blank">discord.gg/scamguard</a> |
