@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScamGuard User Lookup</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:sans-serif;background:#0a0e1a;color:#f5f5f5;min-height:100vh;display:flex;flex-direction:column}
+    header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:linear-gradient(90deg,#0f1323,#05080f)}
+    .logo{display:flex;align-items:center;font-weight:bold;font-size:1.2rem}
+    .logo img{width:24px;margin-right:.5rem}
+    nav ul{display:flex;list-style:none;gap:1.5rem}
+    nav a{color:#f5f5f5;text-decoration:none;font-weight:500}
+    .btn-lookup{padding:.5rem 1rem;background:#00d2ff;border:none;border-radius:999px;color:#0a0e1a;font-weight:bold;cursor:pointer;transition:opacity .2s}
+    .btn-lookup:hover{opacity:.8}
+    main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem}
+    h1{font-size:2.5rem;line-height:1.1}
+    .accent{color:#00d2ff}
+    .form{margin-top:2rem;display:flex;gap:1rem}
+    .form input{padding:.75rem 1rem;border:1px solid #00d2ff;border-radius:8px;background:transparent;color:#f5f5f5;font-size:1rem;outline:none}
+    .form input::placeholder{color:#7a7f8b}
+    .form button{padding:.75rem 1.5rem;background:#00d2ff;border:none;border-radius:8px;color:#0a0e1a;font-size:1rem;font-weight:600;cursor:pointer;transition:opacity .2s}
+    .form button:hover{opacity:.8}
+    footer{padding:1rem 2rem;text-align:center;background:#05080f;font-size:.9rem}
+    footer a{color:#00d2ff;text-decoration:none;margin:0 .5rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/titanxrio/trash/refs/heads/main/Scam_Guard_-_Logo_Animated-2.gif" alt="ScamGuard Logo">
+      SCAMGUARD
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <button class="btn-lookup" onclick="location.href='#lookup'">Lookup User</button>
+  </header>
+  <main id="lookup">
+    <h1>User Lookup <span class="accent">ScamGuard</span></h1>
+    <p>Enter a Discord User ID to check for vouches</p>
+    <form class="form" action="/lookup.html" method="get">
+      <input type="text" name="userid" placeholder="User ID" required>
+      <button type="submit">Search</button>
+    </form>
+  </main>
+  <footer>
+    Contact: <a href="https://discord.gg/scamguard" target="_blank">discord.gg/scamguard</a> |
+    <a href="https://discord.com/users/d3adnet" target="_blank">@d3adnet</a> |
+    <a href="https://discord.com/users/vetenoxis" target="_blank">@vetenoxis</a>
+  </footer>
+</body>
+</html>
